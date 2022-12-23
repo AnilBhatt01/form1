@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="https://getform.io/f/314af15f-20f4-4d49-bc80-6f145025a038"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <p>The Herbal Medicine</p>
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="name"
+          required
+          minlength="3"
+          maxlength="10"
+        />
+        <span class="validity"></span><br />
+
+        <input type="email" placeholder="Email" name="email" required /><span
+          class="validity"
+        ></span
+        ><br />
+
+        <input
+          name="mobNo"
+          type="tel"
+          minlength="10"
+          maxlength="10"
+          placeholder="Mobile no."
+          required
+        />
+        <span class="validity"></span>
+        <br />
+        <input
+          type="number"
+          name="age"
+          placeholder="You Age"
+          min="1"
+          max="100"
+          required
+        />
+        <span class="validity"></span><br />
+        <textarea
+          name="query"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Explain your problem"
+        ></textarea>
+        <br />
+        <label for="file">Medical Report (if any)</label><br />
+        <input type="file" placeholder="Medical Report (if any)" /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
